@@ -1,0 +1,39 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+
+    <select id="album-select">
+    </select>
+    <button id="select-album-btn">List Pictures</button>
+    <table>
+        <thead>
+            <tr>
+                <th>title</th>
+                <th>Thumb</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="pictures-table-body">
+        </tbody>
+    </table>
+    <div id="comments">
+        
+    </div>
+</div>
+<div class="comment" id="comment-template">
+    <div>
+        Name: <span class="comment-name"></span>
+    </div>
+    <div>
+        Email: <span class="comment-email"></span>
+    </div>
+    <div>
+         <p class="comment-body"></p>
+    </div>
+</div>
+
+
